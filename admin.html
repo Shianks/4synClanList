@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4SYN Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>4SYN ADMIN PANEL</h1>
+    <p>Manage Clan Members</p>
+  </header>
+
+  <section class="admin-panel">
+
+    <input type="text" id="name" placeholder="Member IGN" />
+
+    <select id="role">
+      <option value="Leader">Leader</option>
+      <option value="Officer">Officer</option>
+      <option value="Member">Member</option>
+    </select>
+
+    <select id="status">
+      <option value="Active">Active</option>
+      <option value="Inactive">Inactive</option>
+    </select>
+
+    <button onclick="addMember()">Add Member</button>
+
+    <h2>Current Members</h2>
+
+    <div id="adminMembers"></div>
+
+    <button class="download-btn" onclick="downloadJSON()">
+      Download Updated members.json
+    </button>
+
+    <p class="instructions">
+      After downloading, replace your existing members.json file in GitHub.
+    </p>
+
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>
