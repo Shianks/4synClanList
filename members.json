@@ -1,0 +1,17 @@
+[
+  {
+    "name": "SORA",
+    "role": "Leader",
+    "status": "Active"
+  },
+  {
+    "name": "Krshian",
+    "role": "Officer",
+    "status": "Active"
+  },
+  {
+    "name": "Raven",
+    "role": "Member",
+    "status": "Inactive"
+  }
+]
